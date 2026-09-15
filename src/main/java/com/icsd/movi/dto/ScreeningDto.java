@@ -73,7 +73,10 @@ public class ScreeningDto {
                     .filmId(s.getFilm().getId())
                     .filmTitle(s.getFilm().getTitle())
                     .filmGenres(s.getFilm().getGenres())
+                    .filmDuration(s.getFilm().getDuration())
+                    .filmCast(s.getFilm().getCast())
                     .startTime(s.getStartTime())
+                    .endTime(s.getEndTime())
                     .auditoriumName(s.getAuditoriumName())
                     .build();
         }

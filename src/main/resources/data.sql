@@ -177,3 +177,8 @@ INSERT INTO reviews (screening_id, reviewer_id, score, comments, creation_date) 
  (37,3,10,'Visually exceptional and suitable for the large auditorium.',CURRENT_TIMESTAMP),
  (39,4,9,'Landmark action direction with strong educational value.',CURRENT_TIMESTAMP),
  (66,2,8,'A compelling second screening option.',CURRENT_TIMESTAMP);
+
+ALTER TABLE users ALTER COLUMN id RESTART WITH 5;
+ALTER TABLE programs ALTER COLUMN id RESTART WITH 31;
+ALTER TABLE films ALTER COLUMN id RESTART WITH 31;
+ALTER TABLE screenings ALTER COLUMN id RESTART WITH 71;
